@@ -1,11 +1,13 @@
 import asyncio
 import json
+import threading
 
 import uvicorn as uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from db.database import init_db
+from rabbit.consumer import start_consumer_thread
 from routers.auth import router as auth
 from routers.task import router as task
 from routers.token_route import router as token_route
@@ -20,6 +22,9 @@ async def save_openapi_json():
     # Change "openapi.json" to desired filename
     with open("openapi.json", "w") as file:
         json.dump(openapi_data, file)
+
+    consumer_thread = threading.Thread(target=start_consumer_thread, daemon=True)
+    consumer_thread.start()
 
 
 api.include_router(token_route)

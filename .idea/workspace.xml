@@ -4,59 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72855b3b-f9f8-40ea-921e-f9e7498de4bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MIREA_MicroServices.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/DatabaseInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/EmployeePhotoInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/PhotoInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/UserInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/minioTool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/models/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/employees.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/security/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeApi/security/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/DatabaseInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/PhotoInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/UserInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/minioTool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/db/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/DatabaseInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/PhotoInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/UserInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/models/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/routers/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/routers/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/routers/token_route.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/security/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskApi/security/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+    <list default="true" id="72855b3b-f9f8-40ea-921e-f9e7498de4bb" name="Changes" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +119,19 @@
       <option name="presentableId" value="Default" />
       <updated>1731584278350</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1731695449853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731695449853</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

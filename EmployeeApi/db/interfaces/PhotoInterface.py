@@ -3,11 +3,11 @@ from typing import Optional
 from sqlalchemy import select
 
 from db.interfaces.DatabaseInterface import DatabaseInterface
-from db.models import Photo
+from db.models import PhotoEmployee
 
 
 class PhotoInterface(DatabaseInterface):
-    async def get_by_task(self, task_id: int) -> list[Photo]:
+    async def get_by_employee(self, employee_id: int) -> list[PhotoEmployee]:
         """Получает пользователя по username."""
-        result = await self.session.execute(select(Photo).where(Photo.task_id == task_id))
+        result = await self.session.execute(select(PhotoEmployee).where(PhotoEmployee.employee_id == employee_id))
         return list(result.scalars().unique().all())

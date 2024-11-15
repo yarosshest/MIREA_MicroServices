@@ -10,7 +10,7 @@ from starlette.responses import JSONResponse
 from db.interfaces.EmployeePhotoInterface import EmployeePhotoInterface
 from db.interfaces.PhotoInterface import PhotoInterface
 from db.minioTool import minioApi
-from db.models import Task, User, Photo, Employee, \
+from db.models import User, Employee, \
     PhotoEmployee  # Обязательно укажите правильный путь к вашей модели Task
 from db.interfaces.DatabaseInterface import \
     DatabaseInterface  # Убедитесь, что импортируете правильный интерфейс базы данных

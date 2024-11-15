@@ -2,7 +2,7 @@ from fastapi import UploadFile
 from minio import Minio
 from io import BytesIO
 
-from db.models import Photo
+from db.models import PhotoEmployee
 from models.models import PdPhoto
 
 
@@ -26,7 +26,7 @@ class MinioApi:
             file.size
         )
 
-    def convertFromDbPhoto(self, db_photos: list[Photo]) -> list[PdPhoto]:
+    def convertFromDbPhoto(self, db_photos: list[PhotoEmployee]) -> list[PdPhoto]:
         res = []
         for i in db_photos:
             url = self.client.presigned_get_object(

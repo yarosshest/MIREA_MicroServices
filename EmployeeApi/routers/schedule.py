@@ -9,7 +9,7 @@ from starlette.responses import JSONResponse
 
 from db.interfaces.PhotoInterface import PhotoInterface
 from db.minioTool import minioApi
-from db.models import Task, User, Photo, Schedule  # Обязательно укажите правильный путь к вашей модели Task
+from db.models import User, Schedule  # Обязательно укажите правильный путь к вашей модели Task
 from db.interfaces.DatabaseInterface import \
     DatabaseInterface  # Убедитесь, что импортируете правильный интерфейс базы данных
 from db.database import get_db_session  # Импортируйте свою зависимость для получения сессии базы данных

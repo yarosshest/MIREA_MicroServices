@@ -4,6 +4,7 @@ from sqlalchemy import Integer, String, Boolean, ForeignKey, Enum
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped, relationship
 
 class TaskStatus(Enum):
+    name = "task_status"
     PENDING = "Pending"
     IN_PROGRESS = "In Progress"
     COMPLETED = "Completed"

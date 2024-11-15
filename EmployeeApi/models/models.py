@@ -2,8 +2,6 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from db.models import Photo
-
 
 class Message(BaseModel):
     message: str
@@ -78,6 +76,7 @@ class EmployeeCreate(BaseModel):
     email: str
     photo: str
     is_active: bool
+    tasks: list = []
 
 
 class EmployeeGet(BaseModel):
@@ -93,6 +92,7 @@ class EmployeeGet(BaseModel):
     is_active: bool
     schedules: list[ScheduleGet]
     photos: list[PhotoGet]
+    tasks: list = []
 
 
 

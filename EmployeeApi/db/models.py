@@ -1,6 +1,6 @@
 from typing import Optional
 
-from sqlalchemy import Integer, String, Boolean, ForeignKey
+from sqlalchemy import Integer, String, Boolean, ForeignKey, ARRAY
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped, relationship
 
 
@@ -39,6 +39,7 @@ class Employee(Base):
     phone: Mapped[str] = mapped_column(String)
     email: Mapped[str] = mapped_column(String)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    tasks: Mapped[list[int]] = mapped_column(ARRAY(Integer), default=[])
 
     schedules: Mapped["Schedule"] = relationship("Schedule", back_populates="employee")
     photo: Mapped["PhotoEmployee"] = relationship("PhotoEmployee", back_populates="employee")

@@ -37,5 +37,15 @@ services:
       interval: 30s
       timeout: 20s
       retries: 3
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:management
+    environment:
+      - RABBITMQ_DEFAULT_USER=rmuser
+      - RABBITMQ_DEFAULT_PASS=rmpassword
+    ports:
+      - 5672:5672
+      - 15672:15672
 volumes:
   minio-storage:
