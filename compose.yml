@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  employee_api:
+    build: EmployeeApi
+    ports:
+      - "60107:8031"
+#    restart: always
+
+  task_api:
+    build: TaskApi
+    ports:
+      - "60108:8032"
+#    restart: always
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres_admin"
+      POSTGRES_PASSWORD: "postgres_33rfdf322"
+    ports:
+      - "60105:5432"
+
+  minio:
+    image: minio/minio:latest
+    command: server --console-address ":9001" /data/
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minio_admin
+      MINIO_ROOT_PASSWORD: minio_test
+    volumes:
+      - minio-storage:/data
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9000/minio/health/live" ]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+volumes:
+  minio-storage:

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72855b3b-f9f8-40ea-921e-f9e7498de4bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MIREA_MicroServices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/DatabaseInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/EmployeePhotoInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/PhotoInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/UserInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/interfaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/minioTool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/models/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/employees.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/security/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/security/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/DatabaseInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/PhotoInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/UserInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/interfaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/minioTool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/DatabaseInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/PhotoInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/UserInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/interfaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/models/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/routers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/routers/task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/routers/token_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/security/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/security/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2oq5UF4XeOisuJTjnaTTARvhyKF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.compose.yml: Compose Deployment.executor": "Run",
+    "Python.TaskApi.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/yaros/PycharmProjects/MIREA_MicroServices/TaskApi",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices\TaskApi" />
+      <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices\EmployeeApi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices\TaskApi" />
+      <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices\EmployeeApi" />
+      <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.compose.yml: Compose Deployment">
+    <configuration name="TaskApi" type="PythonConfigurationType" factoryName="Python">
+      <module name="MIREA_MicroServices" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (MIREA_MicroServices)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="uvicorn TaskApi/main:api --host 0.0.0.0 --port 8032" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="commandLineOptions" value="--build" />
+          <option name="sourceFilePath" value="compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.compose.yml: Compose Deployment" />
+      <item itemvalue="Python.TaskApi" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72855b3b-f9f8-40ea-921e-f9e7498de4bb" name="Changes" comment="" />
+      <created>1731584278350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731584278350</updated>
+    </task>
+    <servers />
+  </component>
+</project>
