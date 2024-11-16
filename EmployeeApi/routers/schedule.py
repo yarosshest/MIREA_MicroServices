@@ -9,7 +9,7 @@ from starlette.responses import JSONResponse
 
 from db.interfaces.PhotoInterface import PhotoInterface
 from db.minioTool import minioApi
-from db.models import User, Schedule  # Обязательно укажите правильный путь к вашей модели Task
+from db.models import User, Schedule, Employee  # Обязательно укажите правильный путь к вашей модели Task
 from db.interfaces.DatabaseInterface import \
     DatabaseInterface  # Убедитесь, что импортируете правильный интерфейс базы данных
 from db.database import get_db_session  # Импортируйте свою зависимость для получения сессии базы данных
@@ -29,14 +29,19 @@ router = APIRouter(
              responses={
                  401: {"model": Message, "description": "Could not validate credentials"},
                  200: {"description": "Employee created", "model": Message},
-                 404: {"description": "No tasks found"}
+                 404: {"description": "No tasks found"},
+                 414: {"description": "Employee not found"},
              },
              )
 async def create_schedule(schedule: ScheduleCreate,
                           user: Annotated[User, Depends(get_current_user)],
                           db: Annotated[AsyncSession, Depends(get_db_session)]):
+    employee = await db.get(Employee, schedule.employee_id)
+    if not employee:
+        raise HTTPException(status_code=404, detail="Employee not found")
+
     db_interface = DatabaseInterface(db)
-    return await db_interface.add(Schedule(**schedule.dict()))
+    return await db_interface.add(Schedule(**schedule.model_dump()))
 
 
 @router.get("/", response_model=List[ScheduleGet],
@@ -74,7 +79,7 @@ async def read_task(schedule_id: int,
     db_interface = DatabaseInterface(db)
     schedule = await db_interface.get(Schedule, schedule_id)
     if schedule is None:
-        raise HTTPException(status_code=404, detail="Employee not found")
+        raise HTTPException(status_code=404, detail="schedule not found")
     return schedule
 
 

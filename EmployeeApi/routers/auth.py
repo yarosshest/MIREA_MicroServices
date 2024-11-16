@@ -12,7 +12,6 @@ from db.models import User
 from db.interfaces.UserInterface import UserInterface
 from models.models import Message
 from db.database import get_db_session
-
 router = APIRouter(
     prefix="/auth",
     tags=["auth"],
@@ -70,7 +69,6 @@ async def login_post(
     res = JSONResponse(status_code=200,
                        headers={"access_token": access_token, "token_type": "bearer"},
                        content={"message": "Successful login"})
-
     res.set_cookie(key="access_token", value=access_token)
     res.set_cookie(key="token_type", value="bearer")
 

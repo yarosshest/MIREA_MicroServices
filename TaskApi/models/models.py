@@ -36,6 +36,7 @@ class Task(BaseModel):
     title: str
     description: Optional[str] = None
     complete: bool
+    status:str
 
 class PdPhoto(BaseModel):
     id: int

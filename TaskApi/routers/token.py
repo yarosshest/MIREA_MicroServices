@@ -7,9 +7,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from starlette import status
 
 from db.database import get_db_session
-from models.models import TokenData, Message
+from models.models import TokenData, Message, Token
 from security.security import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token
-
 
 router = APIRouter(
     prefix="/token",
@@ -17,7 +16,7 @@ router = APIRouter(
 
 )
 
-@router.post("/", response_model=TokenData,
+@router.post("/", response_model=Token,
              responses={
                  200: {"model": Message, "description": "Successful login"},
                  401: {"model": Message, "description": "Incorrect username or password"}
@@ -35,6 +34,7 @@ async def login_for_access_token(
         )
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": user.username}, expires_delta=access_token_expires
+        data={"sub": user.username, "scopes": form_data.scopes}, expires_delta=access_token_expires
     )
-    return {"access_token": access_token, "token_type": "bearer"}
+    return Token(access_token=access_token, token_type="bearer")
+

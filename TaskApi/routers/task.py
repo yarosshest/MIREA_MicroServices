@@ -21,7 +21,7 @@ router = APIRouter(
     prefix="/tasks",
     tags=["tasks"],
 )
-@router.post("/", response_model=Message,
+@router.post("/", response_model=TaskCreate,
              responses={401: {"model": Message, "description": "Could not validate credentials"},},
              summary="Create a new task",
              description="Create a new task by providing the task details. "
@@ -31,13 +31,12 @@ async def create_task(task: TaskCreate,
                       user: Annotated[User, Depends(get_current_user)],
                       db: Annotated[AsyncSession, Depends(get_db_session)]):
     db_interface = DatabaseInterface(db)
-    new_task = Task(**task.dict())
+    new_task = Task(**task.model_dump())
     return await db_interface.add(new_task)
 
 
 @router.get("/", response_model=List[pdTask],
             responses={
-                401: {"model": Message, "description": "Could not validate credentials"},
                 200: {"description": "A list of tasks", "model": List[pdTask]},
                 404: {"description": "No tasks found"}
             },
@@ -45,7 +44,7 @@ async def create_task(task: TaskCreate,
             description="Fetches a list of tasks from the database. "
                         "The result can be paginated using the skip and limit query parameters."
 )
-async def read_tasks(user: Annotated[User, Depends(get_current_user)],
+async def read_tasks(
                      skip: int = 0,
                      limit: int = 10,
                      db: AsyncSession = Depends(get_db_session)):
@@ -94,7 +93,7 @@ async def update_task(task_id: int,
         raise HTTPException(status_code=404, detail="Task not found")
 
     # Обновляем только те поля, которые были переданы
-    updated_task = await db_interface.update(task, **task_update.dict(exclude_unset=True))
+    updated_task = await db_interface.update(task, **task_update.model_dump(exclude_unset=True))
     return updated_task
 
 

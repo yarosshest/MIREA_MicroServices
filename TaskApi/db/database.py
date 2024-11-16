@@ -13,7 +13,4 @@ async def init_db():
 
 async def get_db_session():
     async with SessionLocal() as session:
-        try:
-            yield session
-        finally:
-            await session.close()
+        return  session

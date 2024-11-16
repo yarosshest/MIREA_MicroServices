@@ -15,7 +15,7 @@ from db.models import User, Employee, \
 from db.interfaces.DatabaseInterface import \
     DatabaseInterface  # Убедитесь, что импортируете правильный интерфейс базы данных
 from db.database import get_db_session  # Импортируйте свою зависимость для получения сессии базы данных
-from models.models import TaskCreate, TaskUpdate, Task as pdTask, Message, PdPhoto, EmployeeCreate, EmployeeGet
+from models.models import TaskCreate, TaskUpdate, Task as pdTask, Message, PdPhoto, EmployeeCreate, EmployeeGet, Task
 from security.security import get_current_user
 
 router = APIRouter(
@@ -40,7 +40,9 @@ async def create_employee(task: EmployeeCreate,
                           user: Annotated[User, Depends(get_current_user)],
                           db: Annotated[AsyncSession, Depends(get_db_session)]):
     db_interface = DatabaseInterface(db)
-    new_emp = Employee(**task.dict())
+    # Handle tasks: fetch Task objects based on the list of task IDs
+    # Create the Employee object
+    new_emp = Employee(**task.model_dump())
     return await db_interface.add(new_emp)
 
 

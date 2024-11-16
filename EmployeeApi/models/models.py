@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Message(BaseModel):
@@ -12,8 +12,9 @@ class TokenData(BaseModel):
     token_type: str
 
 
-class TokenData(BaseModel):
-    username: str | None = None
+class Token(BaseModel):
+    access_token: str
+    token_type: str
 
 
 class LoginForm(BaseModel):
@@ -36,6 +37,7 @@ class Task(BaseModel):
     title: str
     description: Optional[str] = None
     complete: bool
+    status:str
 
 class PdPhoto(BaseModel):
     id: int
@@ -74,9 +76,8 @@ class EmployeeCreate(BaseModel):
     department: str
     phone: str
     email: str
-    photo: str
     is_active: bool
-    tasks: list = []
+    tasks: Optional[list[int]] = Field(default_factory=list)
 
 
 class EmployeeGet(BaseModel):
@@ -88,11 +89,8 @@ class EmployeeGet(BaseModel):
     department: str
     phone: str
     email: str
-    photo: str
     is_active: bool
-    schedules: list[ScheduleGet]
-    photos: list[PhotoGet]
-    tasks: list = []
+    tasks: Optional[list[int]] = Field(default_factory=list)
 
 
 

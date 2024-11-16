@@ -5,7 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72855b3b-f9f8-40ea-921e-f9e7498de4bb" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/EmployeeApi/routers/cases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskApi/.idea/TaskApi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MIREA_MicroServices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MIREA_MicroServices.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/api/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/api/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/routers/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/routers/employees.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/routers/employees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/routers/schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/routers/schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/routers/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/routers/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeApi/security/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeApi/security/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/db/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/db/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/db/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/rabbit/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/rabbit/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/routers/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/routers/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/routers/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/routers/token_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/routers/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskApi/security/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/TaskApi/security/security.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yarosshest&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yarosshest/MIREA_MicroServices.git&quot;,
+    &quot;accountId&quot;: &quot;8f78c54b-3d3c-4b66-aeff-42ba7fb236b7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -33,13 +71,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.compose.yml.task_api: Compose Deployment.executor": "Run",
     "Docker.compose.yml: Compose Deployment.executor": "Run",
+    "Docker.task_api.executor": "Run",
     "Python.TaskApi.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.uvicorn main:api --host 0.0.0.0 --port 8032.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/yaros/PycharmProjects/MIREA_MicroServices/TaskApi",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -53,8 +97,52 @@
       <recent name="C:\Users\yaros\PycharmProjects\MIREA_MicroServices" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.task_api">
     <configuration name="TaskApi" type="PythonConfigurationType" factoryName="Python">
+      <module name="MIREA_MicroServices" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="uvicorn TaskApi/main:api --host 0.0.0.0 --port 8032" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MIREA_MicroServices" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TaskApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TaskApi/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="uvicorn main:api --host 0.0.0.0 --port 8032" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="MIREA_MicroServices" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="uvicorn TaskApi/main:api --host 0.0.0.0 --port 8032" />
+      <option name="SCRIPT_NAME" value="uvicorn main:api --host 0.0.0.0 --port 8032" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,20 +181,40 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="task_api" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="commandLineOptions" value="--build" />
+          <option name="services">
+            <list>
+              <option value="task_api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.task_api" />
       <item itemvalue="Docker.compose.yml: Compose Deployment" />
+      <item itemvalue="Python.uvicorn main:api --host 0.0.0.0 --port 8032" />
       <item itemvalue="Python.TaskApi" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.task_api" />
         <item itemvalue="Docker.compose.yml: Compose Deployment" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
@@ -133,5 +241,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TaskApi/routers/token.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EmployeeApi/security/security.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

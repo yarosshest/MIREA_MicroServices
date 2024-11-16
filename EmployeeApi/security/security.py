@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timedelta
 from typing import Annotated
 
@@ -11,7 +12,7 @@ from db.database import get_db_session
 from models.models import TokenData
 from db.interfaces.UserInterface import UserInterface
 from db.models import User
-
+logger = logging.getLogger('uvicorn.error')
 credentials_exception = HTTPException(
     status_code=status.HTTP_401_UNAUTHORIZED,
     detail="Could not validate credentials",
@@ -24,7 +25,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token/", auto_error=False)
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token/", auto_error=True)
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
@@ -49,11 +50,12 @@ async def authenticate_user(username: str, password: str,
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
     if expires_delta:
-        expire = datetime.utcnow() + expires_delta
+        expire = datetime.now() + expires_delta
     else:
-        expire = datetime.utcnow() + timedelta(minutes=15)
+        expire = datetime.now() + timedelta(minutes=15)
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    logger.debug(f"encoded_jwt {encoded_jwt}")
     return encoded_jwt
 
 
@@ -66,11 +68,10 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)],
         username: str = payload.get("sub")
         if username is None:
             raise credentials_exception
-        token_data = TokenData(username=username)
     except JWTError:
         raise credentials_exception
     db = UserInterface(db_session)
-    user = await db.get_by_username(username=token_data.username)
+    user = await db.get_by_username(username=username)
     if user is None:
         raise credentials_exception
     return user

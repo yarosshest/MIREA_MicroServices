@@ -5,8 +5,12 @@
       <sourceFolder url="file://$MODULE_DIR$/EmployeeApi" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TaskApi" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (MIREA_MicroServices)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="C:\Users\yaros\PycharmProjects\MIREA_MicroServices\TaskApi\requirements.txt" />
   </component>
 </module>

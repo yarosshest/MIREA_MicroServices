@@ -23,7 +23,7 @@ class PhotoEmployee(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     filename: Mapped[str] = mapped_column(String, index=True)  # Название файла в MinIO
     url: Mapped[str] = mapped_column(String)  # Ссылка на фото в MinIO
-    employee_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("employee.id"))  # Связь с таблицей заданий
+    employee_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("employees.id"))
 
     employee: Mapped["Employee"] = relationship("Employee", back_populates="photo")
 

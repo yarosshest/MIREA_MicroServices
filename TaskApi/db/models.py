@@ -4,7 +4,6 @@ from sqlalchemy import Integer, String, Boolean, ForeignKey, Enum
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped, relationship
 
 class TaskStatus(Enum):
-    name = "task_status"
     PENDING = "Pending"
     IN_PROGRESS = "In Progress"
     COMPLETED = "Completed"
@@ -27,9 +26,18 @@ class Task(Base):
     title: Mapped[str] = mapped_column(String, index=True)
     description: Mapped[Optional[str]] = mapped_column(String, nullable=True)
     complete: Mapped[bool] = mapped_column(Boolean, default=False)
-    status: Mapped[TaskStatus] = mapped_column(Enum, default=TaskStatus.PENDING)
+    status: Mapped[TaskStatus] = mapped_column(Enum("Pending", "In Progress", "Completed", "Cancelled", name="task_status_enum"), default=TaskStatus.PENDING)
 
     photos: Mapped["Photo"] = relationship("Photo", back_populates="task")
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "title": self.title,
+            "description": self.description,
+            "complete": self.complete,
+            "status": self.status,
+        }
 
 class Photo(Base):
     __tablename__ = 'photos'
