@@ -20,7 +20,7 @@ services:
       POSTGRES_USER: "postgres_admin"
       POSTGRES_PASSWORD: "postgres_33rfdf322"
     ports:
-      - "60105:5432"
+      - "61105:5432"
 
   minio:
     image: minio/minio:latest
