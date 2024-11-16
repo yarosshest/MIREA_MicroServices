@@ -18,6 +18,7 @@ async def callback(message: aio_pika.abc.AbstractIncomingMessage):
         await db_interface.update(task, **task.to_dict())
         await message.channel.basic_ack(message.delivery_tag)
         print(f"[x] Received: Task ID {data['task_id']} with status {data['status']}")
+        session.clouse()
 
 
 async def consuming():
